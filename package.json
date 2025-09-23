@@ -1,0 +1,20 @@
+{
+	"name": "socketio-boilerplate",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"dev": "pnpm --filter client --filter server --parallel dev",
+		"build": "pnpm --filter client build && pnpm --filter server build",
+		"start": "node apps/server/dist/main"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.15.0",
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"ultracite": "5.4.4"
+	}
+}
